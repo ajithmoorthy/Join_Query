@@ -1,0 +1,20 @@
+============First Query in Joins==============================
+Select Book.title,Book.rating
+from Author
+inner join Book
+on Author.id=Book.Author_id where Author.death_year is null;
+===============================================================
+
+===================Second Query in Joins========================
+Select Book.title,Adaptation.title,Adaptation.Release_year
+from Book
+inner join Adaptation
+on Book.id=Adaptation.Book_id;
+=================================================================
+
+=======================Third Query in joins======================
+Select Book.title,Book_Review.review,Book.author
+from Book
+inner join Book_Review
+on Book.id=Book_Review.Book_id;
+=================================================================
